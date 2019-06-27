@@ -36,7 +36,7 @@ static private void wrapWithAnsiColor(Object obj) {
     }
 }
 
-static class AnsiCursor {
+public static class AnsiCursor {
     String up(int n) {
         return CSI + n + "A";
     }
@@ -58,7 +58,7 @@ static class AnsiCursor {
     }
 }
 
-static class AnsiFore {
+public static class AnsiFore {
     public String BLACK = "30",
             RED = "31",
             GREEN = "32",
@@ -83,7 +83,7 @@ static class AnsiFore {
     }
 }
 
-static class AnsiBack {
+public static class AnsiBack {
     public String BLACK = "40",
             RED = "41",
             GREEN = "42",
@@ -109,7 +109,7 @@ static class AnsiBack {
     }
 }
 
-static class AnsiStyle {
+public static class AnsiStyle {
     public String BRIGHT = "1",
             DIM = "2",
             NORMAL = "22",
